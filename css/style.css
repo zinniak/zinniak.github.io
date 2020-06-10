@@ -34,7 +34,7 @@ h3{
 
 header{
 	width: 100%;
-}	
+}
 
 footer{
 	height:30vh;
@@ -92,7 +92,7 @@ main{
 	background: white;
 	width: 100%;
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
 	justify-content: space-between;
 }
 
@@ -184,14 +184,14 @@ nav .burgnav {
 }
 
 
-/* Change the link color on hover 
+/* Change the link color on hover
 /*also want to use focus for tab users*/
-nav li a:hover {  
+nav li a:hover {
   background-color: #A4A4A4;
   color: black;
 }
 
-nav li a:focus {  
+nav li a:focus {
   background-color: #A4A4A4;
   color: black;
 }
@@ -204,7 +204,7 @@ ul .current{
 }
 
 
-/* INDEX PAGE -------------------------------*/ 
+/* INDEX PAGE -------------------------------*/
 .hero-image {
   background-image: linear-gradient(rgba(177, 219, 255, 0.5), rgba(0, 0, 0, 0.69)), url("../images/index.jpg");
   height: 50vh;
@@ -242,7 +242,7 @@ ul .current{
 .text{
 	width: 100%;
 	display: grid;
-	grid-template-columns: auto; 
+	grid-template-columns: auto;
 	margin: auto;
 }
 
@@ -254,7 +254,7 @@ ul .current{
     margin: 20px auto 50px auto;
     padding-bottom: 60px;
     text-decoration: none;
-    border-bottom: 3px solid #4588ba; 
+    border-bottom: 3px solid #4588ba;
 }
 
 .block a{
@@ -296,13 +296,13 @@ video{
     margin: auto;
     margin-bottom: 10px;
     font-weight: bold;
-}	
+}
 
 .vid_button{
 	background: black;
 	color: white;
 	border: 2px solid black;
-	border-radius: 6px; 
+	border-radius: 6px;
 	width: 3%;
 	margin:auto;
 	margin-top: 5px;
@@ -336,9 +336,9 @@ video{
 /*	background: silver;*/
 	width: 100%;
 	display: grid;
-	grid-template-columns: auto; 
+	grid-template-columns: auto;
 	margin: auto;
-}			
+}
 
 .item{
 	background: white;
@@ -478,13 +478,13 @@ video{
     width: 95%;
     margin: auto;
     align-items: center;
-    border-bottom: 3px solid #4588ba; 
+    border-bottom: 3px solid #4588ba;
     margin-bottom: 50px;
 }
 
 .event img{
 	display: block;
-	width: 90%;	
+	width: 90%;
 	margin: auto;
 }
 
@@ -493,7 +493,7 @@ video{
 	display: flex;
 	font-size: 120%;
 }
-	
+
 .event p{
 	padding-bottom: 50px;
 	font-size: 120%;
@@ -542,7 +542,7 @@ video{
 .content li {
   font-size: 120%;
   margin-top: 10px;
-  padding: 0;	
+  padding: 0;
   width: 100%;
   list-style: none;
   text-align: center;
@@ -573,7 +573,7 @@ video{
 .act button {
   visibility: visible;
   width: 100px;
-} 
+}
 
 .act button:active{
 	color: blue;
@@ -634,7 +634,7 @@ video{
 
 .dining{
 	display: grid;
-	grid-template-columns: auto; 
+	grid-template-columns: auto;
 	justify-content: space-around;
 	margin: auto;
 	background-color: silver;
@@ -683,13 +683,13 @@ video{
 .rest img{
 	margin:  auto;
 	width: 70%;
-}	
+}
 
 .rest p{
 	justify-content: center;
 	margin: 0 auto;
 	padding-top: 3px;
-	padding-bottom: 20px;	
+	padding-bottom: 20px;
 }
 
 .rest a{
@@ -838,7 +838,7 @@ nav .icon {
 
 
 .event-page{
-	width: 95%;	
+	width: 95%;
 }
 
 .carouselbox {
@@ -922,7 +922,7 @@ video{
 .flipcard {
   background-color: transparent;
   width: 100%;
-  margin-bottom: 280px;
+  margin-bottom: 300px;
   margin-top: -13px;
   cursor: pointer;
 }
@@ -989,9 +989,9 @@ video{
 }
 }
 
-@media screen and (prefers-reduced-motion: reduce) 
+@media screen and (prefers-reduced-motion: reduce)
 
-{ 
+{
 .skip{
     transition: none;
     animation: none;
