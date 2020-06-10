@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Los Angeles Travel Guide</title>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to Content</a>
+<header class = 'main-header'>
+    <nav class = "hnav" id="scroll_top">
+        <ul>
+            <li><a href = "index.html" class="current">Home</a></li>
+            <li><a href = "what_to_do.html">Where to Visit</a></li>
+            <li><a href = "events.html">Shows & Events</a></li>
+            <li><a href = "special_diet_dining.html">Special Diet Dining</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i aria-label="icon to expand navigation bar" class="fa fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+ <div class="hero-image">
+  <div class="hero-text">
+    <h1>Los Angeles Travel Guide</h1>
+    <p>A resident's take on the best things to do in Los Angeles</p>
+  </div>
+</div>  
+</header>
+<main>
+   
+
+<div class='overview'>
+<p id="main">From mountains to beaches to trendy shopping districts, Los Angeles and its surrounding areas have much to offer for just about anyone at no matter what time of year. See what places Zinnia recommends for first time visitors to the area as well as where to get tickets for some interesting shows!</p>
+</div>
+<div class="vid_section"> 
+    <p>Griffith Observatory on 4th of July</p>
+    <div class="vid">
+  <video id="video" controls>
+    <source src="videos/fireworks.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="video_filters">
+    <button class= "vid_button" onclick="grayVideo()">Grayscale</button>
+    <button class= "vid_button" onclick="sepiaVideo()">Sepia</button>
+    <button class= "vid_button" onclick="invertVideo()">Invert</button>
+    <button class= "vid_button" onclick="ogVideo()">Original</button>
+  </div>
+  </div>
+</div> 
+<div class='text'>
+    <div class='block'>
+	<h2><a href = "what_to_do.html">Where to Visit</a></h2>
+	<p>The list of things to see and do in L.A is near endless. While Disneyland and Universal Studios are one of the biggest tourist attractions, there are a myriad of free popular natural and man-made sites to see that are bound to make your trip worth it.</p>
+</div>
+
+    <div class='block'>
+	<h2><a href = "events.html">Shows and Events</a></h2>
+	<p>See some popular shows and events happening during your visit to the city.</p>
+</div>
+
+    <div class='block'>
+	<h2><a href = "special_diet_dining.html">Special Diet Dining</a></h2>
+	<p>Los Angeles is considered a melting pot of different cultures and lifestyles. No matter what your dietary needs, there is at least one iconic dining option in L.A you're bound to love. Check out one of the most popular Vegan, Vegetarian, Halal, Kosher, and Organic and Gluten-free restaurant options.</p>
+</div>
+</div>
+
+<footer>
+     <div class='footer-text'>
+        <p>Zinnia Khan</p>  
+        <a href="https://www.instagram.com/zee_k/"><i aria-label="instagram link" class="fab fa-instagram"></i></a>
+   </div>
+   <div class ='up'>
+        <a class='top' href='#scroll_top'><i aria-label='back to top' class="fas fa-arrow-circle-up"></i></a>
+        <a href='#scroll_top'><p>Back to top</p></a>
+    </div>
+
+</footer>
+<script>
+function hamburger() {
+  var x = document.getElementById("scroll_top");
+  if (x.className === "hnav") {
+    x.className = "burgnav";
+  } else {
+    x.className = "hnav";
+  }
+}
+
+//  video filters
+var vid = document.getElementById("video"); 
+
+function grayVideo(){
+  vid.style.filter = "grayscale(100%)"
+}
+
+function sepiaVideo(){
+  vid.style.filter = "sepia(100%)";
+}
+
+function invertVideo(){
+  vid.style.filter = "invert(100%)";
+}
+
+function ogVideo(){
+  vid.style.filter = "none"
+}
+
+
+</script>
+</main>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <title>Special Diet Dining</title>
+  
+</head>
+<body>
+<a class="skip" href="#main">Skip to Content</a>
+<header>
+    <nav class=hnav id="scroll_top">
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "what_to_do.html">Where to Visit</a></li>
+            <li><a href = "events.html">Shows & Events</a></li>
+            <li><a href = "special_diet_dining.html" class="current">Special Diet Dining</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i aria-label="icon to expand navigation bar" class="fa fa-bars"></i></a></li>
+
+        </ul>
+    </nav>
+    <h1>Special Diet Dining</h1>
+</header>
+
+<main>
+    <div class='overview'>
+ <p id="main">Below are my top recommendations for Vegan/Vegatarian, Halal, and Organic and Gluten Free restaurants.</p>
+</div>
+   
+
+<div class='dining'>
+<button tabindex="0" class="accordion" id="button1">Organic + Gluten Free</button>
+<div class='rest' id='organic'>
+    <h2>Organic + Gluten Free</h2>
+    <h3><a href="http://www.powerplantsuperfoodcafe.com/">Powerplant Superfood Kitchen</a></h3>
+    <img src="images/powerplant.png" alt="Powerplant Superfood Kitchen Logo"/>
+    <h4>Address</h4>
+    <address>
+        5671 W. Pico Blvd.<br>
+        Los Angeles, CA 90019
+    </address>
+    <p>(323) 965-2233</p>
+    <h4>Hours</h4>
+    <p><strong>Mon-Sat:</strong> 9 AM - 7 PM<br>
+    <strong>Sun:</strong> 9 AM - 4 PM</p>
+</div>
+
+<button class="accordion" id="button2">Vegan + Vegetarian</button>
+<div class='rest' id='veg'>
+    <h2>Vegan + Vegetarian</h2>
+    <h3><a href="https://www.mohawk.la/">Mohawk Bend</a></h3>
+    <img src = "images/mohawk_bend.JPG" alt = "Mohawk Bend Logo"/>
+    <h4>Address</h4>
+    <address>
+        2141 W. Sunset Blvd<br>
+        Los Angeles, CA 90026​
+    </address>
+    <p>(213) 483-2337</p>
+    <h4>Hours</h4>
+    <p><strong>Mon-Thur:</strong> 11:30 AM – 12 AM<br>
+    <strong>Fri:</strong> 11:30 AM – 2 AM<br>
+    <strong>Sat:</strong> 9:30 AM – 2 AM<br>
+    <strong>Sun:</strong> 9:30 AM – 12 AM</p>
+</div>
+
+<button class="accordion">Halal</button>
+<div class='rest' id='halal'>
+    <h2>Halal</h2>
+    <h3><a href="https://www.nomadasianbistro.com/">Nomad Asian Bistro</a></h3>
+    <img src="images/nomad_logo.jpg" alt="Nomad Asian Bistro Logo"/>
+    <h4>Address</h4>
+    <address>
+        6563 E. Pacific Coast Hwy<br>
+	    Long Beach, CA 90803
+    </address>
+    <p>(562) 430-6888</p>
+    <h4>Hours</h4>
+    <p><strong>Sun-Thurs:</strong> 11 AM - 9 PM<br>
+    <strong>Fri-Sat:</strong> 11 AM - 9:30 PM</p>
+</div>  
+
+</div>
+
+
+<footer>
+	 <div class='footer-text'>
+        <p>Zinnia Khan</p>  
+        <a href="https://www.instagram.com/zee_k/"><i aria-label="instagram link" class="fab fa-instagram"></i></a>
+   </div>
+   <div class ='up'>
+        <a class='top' href='#scroll_top'><i aria-label='back to top' class="fas fa-arrow-circle-up"></i></a>
+        <a href='#scroll_top'><p>Back to top</p></a>
+    </div>
+</footer>
+
+<script>
+
+// function for hamburger menu on mobile view
+function hamburger() {
+  var x = document.getElementById("scroll_top");
+  if (x.className === "hnav") {
+    x.className = "burgnav";
+  } else {
+    x.className = "hnav";
+  }
+}
+
+// accordion on mobile width only
+const mb = window.matchMedia( "(max-width: 700px)" );
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+if (mb.matches){
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+}
+
+
+</script>
+
+</main>
+</body>
+
+</html>
